@@ -35,6 +35,6 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontFamily: "sans-serif",
     marginTop: "auto",
-    marginBottom: 55,
+    marginBottom: 50,
   }
 });
