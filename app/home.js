@@ -8,11 +8,11 @@ preto: #030F26
 branco: #F2F2F2
 */ 
 
-export default function Index() {
+export default function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.txtentrar}>Cinefiction</Text>
-      <Link href="/home" asChild><TouchableOpacity style={styles.btentrar}>Entrar</TouchableOpacity></Link>
+      <Text style={styles.txtentrar}>Cinefiction - Home</Text>
+      {/* <Link href="/home" asChild><TouchableOpacity style={styles.btentrar}>Entrar</TouchableOpacity></Link> */}
     </View>
   );
 }

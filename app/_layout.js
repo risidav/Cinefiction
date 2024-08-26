@@ -23,6 +23,7 @@ export default function RootLayout() {
       }}
     >
       <Stack.Screen name="index" options={{ title: "Cinefiction" }} />
+      <Stack.Screen name="home" options={{ title: "Home" }} />
     </Stack>
   );
 }
