@@ -11,7 +11,7 @@ branco: #F2F2F2
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>Cinefiction</Text>
       <Pressable style={styles.btentrar}>Entrar</Pressable>
     </View>
   );
