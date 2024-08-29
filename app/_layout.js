@@ -5,7 +5,7 @@ vermelho: #D93250
 vinho: #732743
 preto: #030404
 #030410
-branco: #F2F2F2
+branco: #F1F1F1
 */ 
 
 export default function RootLayout() {
@@ -15,7 +15,7 @@ export default function RootLayout() {
         headerStyle: {
           backgroundColor: "#030410",
         },
-        headerTintColor: "#F2F2F2",
+        headerTintColor: "#F1F1F1",
         headerTitleStyle: {
           fontWeight: "bold",
         },
