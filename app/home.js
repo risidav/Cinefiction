@@ -1,4 +1,4 @@
-import { TouchableOpacity, Text, View, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, View, StyleSheet, ScrollView } from "react-native";
 import { Link } from "expo-router";
 /*
 vermelho: #D93250
@@ -16,9 +16,14 @@ export default function Home() {
           <Text style={styles.title}>Cinefiction - Home</Text>
         </View>
         <View style={styles.scroll}>
-          <View style={styles.box}>
-
-          </View>
+          <View style={styles.box}></View>
+          <View style={styles.box}></View>
+          <View style={styles.box}></View>
+          <View style={styles.box}></View>
+          <View style={styles.box}></View>
+          <View style={styles.box}></View>
+          <View style={styles.box}></View>
+          <View style={styles.box}></View>
         </View>
       </View>
       <View style={styles.bar}>
@@ -54,20 +59,25 @@ const styles = StyleSheet.create({
   scroll:
   {
     width: "100%",
-    alignItems: "center",
-    flex: 8,
+    justifyContent: "space-around",
+    display: "flex",
+    flexWrap: "wrap",
+    flexDirection: "row",
+    flex: 12,
+    overflowY: 'scroll',
+    overflowX: 'hidden',
   },
   box:
   {
-    height: 200,
-    width: "90%",
-    marginTop: 25,
+    borderRadius: 10,
+    height: 320,
+    width:  200,
+    marginVertical: 25,
     backgroundColor: "#ddd",
   },
   bar:
   {
     flex: 1,
-    height: "100px",
     backgroundColor: "#ccc",
   }
 });
