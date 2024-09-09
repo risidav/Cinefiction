@@ -18,7 +18,7 @@ export default function Index() {
         <Text style={styles.txtentrar}>Cinefiction</Text>
         <Text style={styles.descentrar}>Bem vindo ao cinefiction! O app de cinema que foi feito para você!</Text>
         <Link href="/login" asChild><TouchableOpacity style={styles.btentrar}>Login</TouchableOpacity></Link>
-        <Link href="/login" asChild><TouchableOpacity style={styles.btcadastrar}>Cadastrar</TouchableOpacity></Link>
+        <Link href="/cadastrar" asChild><TouchableOpacity style={styles.btcadastrar}>Cadastrar</TouchableOpacity></Link>
       </View>
     </View>
   );

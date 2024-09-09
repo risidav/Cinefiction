@@ -9,18 +9,18 @@ preto: #030F26
 branco: #F2F2F2
 */ 
 
-export default function Login() {
+export default function Cadastrar() {
   const [text, setText] = React.useState({nome: '', senha: '', email: '' });
   return (
     <View style={styles.container}>
       <View style={styles.textContainer}>
-        <Text style={styles.txtentrar}>Login</Text>
+        <Text style={styles.txtentrar}>Cadastrar</Text>
         <View style={styles.boxlogin}>
           <TextInput style={styles.input} mode="outlined" value={text.nome} placeholder="Digite seu nome" onChangeText={text => setText(text)}/>
           <TextInput style={styles.input} mode="outlined" value={text.email} placeholder="Digite seu email" onChangeText={text => setText(text)}/>
           <TextInput style={styles.input} mode="outlined" value={text.senha} placeholder="Digite sua senha" onChangeText={text => setText(text)}/>
         </View>
-        <Link href="/home" asChild><TouchableOpacity style={styles.btentrar}>Entrar</TouchableOpacity></Link>
+        <Link href="/home" asChild><TouchableOpacity style={styles.btentrar}>Criar conta</TouchableOpacity></Link>
       </View>
     </View>
   );
