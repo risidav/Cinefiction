@@ -11,9 +11,9 @@ branco: #F2F2F2
 export default function Index() {
   return (
     <View style={styles.container}>
-      <View style={styles.imageContainer}>
+      {/* <View style={styles.imageContainer}>
 
-      </View>
+      </View> */}
       <View style={styles.textContainer}>
         <Text style={styles.txtentrar}>Cinefiction</Text>
         <Text style={styles.descentrar}>Bem vindo ao cinefiction! O app de cinema que foi feito para você!</Text>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#f2f2f2",
     borderColor: "#ddd",
-    borderTopWidth: 3,
+    //borderTopWidth: 3,
     width: "80%",
   },
   imageContainer:
@@ -81,11 +81,12 @@ const styles = StyleSheet.create({
     fontFamily: "sans-serif",
     fontWeight: "bold",
     marginBottom: 20,
+    marginTop: 30,
   },
   descentrar:
   {
     width: 400,
-    color: "#aaa",
+    color: "#888",
     fontSize: 18,
     fontFamily: "sans-serif",
     fontWeight: "400",

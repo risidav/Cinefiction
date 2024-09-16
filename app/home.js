@@ -16,14 +16,14 @@ export default function Home() {
           <Text style={styles.title}>Cinefiction - Home</Text>
         </View>
         <View style={styles.scroll}>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
+          <Link href="/page" asChild><View style={styles.box}><Text style={styles.title}>filme</Text></View></Link>
+          <Link href="/page" asChild><View style={styles.box}><Text style={styles.title}>filme</Text></View></Link>
+          <Link href="/page" asChild><View style={styles.box}><Text style={styles.title}>filme</Text></View></Link>
+          <Link href="/page" asChild><View style={styles.box}><Text style={styles.title}>filme</Text></View></Link>
+          <Link href="/page" asChild><View style={styles.box}><Text style={styles.title}>filme</Text></View></Link>
+          <Link href="/page" asChild><View style={styles.box}><Text style={styles.title}>filme</Text></View></Link>
+          <Link href="/page" asChild><View style={styles.box}><Text style={styles.title}>filme</Text></View></Link>
+          <Link href="/page" asChild><View style={styles.box}><Text style={styles.title}>filme</Text></View></Link>
         </View>
       </View>
       <View style={styles.bar}>
@@ -74,6 +74,9 @@ const styles = StyleSheet.create({
     width:  200,
     marginVertical: 25,
     backgroundColor: "#ddd",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
   bar:
   {
