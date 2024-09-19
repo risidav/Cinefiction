@@ -12,11 +12,19 @@ branco: #F2F2F2
 export default function Login() {
   return (
     <View style={styles.container}>
-      <View style={styles.topContainer}>
-        <View style={styles.imagebox}><Text>filme</Text></View>
-        <View style={styles.titlebox}><Text style={styles.title}>TITULO DO FILME</Text></View>
+      <View style={styles.content}>
+        <View style={styles.topContainer}>
+          <View style={styles.imagebox}><Text>filme</Text></View>
+          <View style={styles.titlebox}>
+            <Text style={styles.title}>TITULO DO FILME</Text>
+            <Text style={styles.gender}>genero - genero - genero</Text>
+            <Text style={styles.sinopse}>Sinopse</Text><Text style={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in ultrices elit. Praesent id hendrerit nulla, vitae lobortis ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras eget ullamcorper magna.</Text>
+          </View>
+        </View>
+        <View style={styles.midContainer}></View>
       </View>
-      <View style={styles.midContainer}></View>
+      <View style={styles.bar}>
+      </View>
     </View>
   );
 }
@@ -28,7 +36,12 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     backgroundColor: "#f2f2f2",
-    alignItems: "center",
+  },
+  content:
+  {
+    flex: 12,
+    overflowY: 'scroll',
+    overflowX: 'hidden',
   },
   topContainer:
   {
@@ -36,7 +49,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "top",
     alignItems: "left",
-    backgroundColor: "#ddd",
+    backgroundColor: "#f2f2f2",
     width: "100%",
     height: 500,
   },
@@ -50,7 +63,7 @@ const styles = StyleSheet.create({
     maxWidth:  200,
     marginLeft: 25,
     marginTop: 25,
-    backgroundColor: "#aaa",
+    backgroundColor: "#ddd",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -62,7 +75,35 @@ const styles = StyleSheet.create({
   },
   title:
   {
-    fontSize: 35,
+    fontSize: 25,
     fontWeight: "600",
+  },
+  gender:
+  {
+    fontSize: 16,
+    fontWeight: "350",
+    paddingTop: 5,
+    paddingBottom: 10,
+    borderBottomWidth: 2,
+    borderColor: "#ddd",
+  },
+  sinopse:
+  {
+    fontSize: 16,
+    fontWeight: "500",
+    paddingTop: 5,
+    paddingBottom: 5,
+    textAlign: "justify"
+  },
+  desc:
+  {
+    fontSize: 16,
+    fontWeight: "350",
+    textAlign: "justify"
+  },
+  bar:
+  {
+    flex: 1,
+    backgroundColor: "#ccc",
   }
 });
